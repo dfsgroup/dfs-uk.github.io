@@ -1,0 +1,301 @@
+body {
+  margin:0 ;
+  font-family: sans-serif;
+}
+[v-cloak] {
+  display: none;
+}
+#holdingPage {
+  width:1366px;
+  margin:0 auto;
+}
+.content {
+  width:1024px;
+  height: 772px;
+    text-align: center;
+  position: relative;
+  margin:0 auto;
+  background: url(/images/DFS_holding-page_background.png) no-repeat;
+
+}
+
+.innerContent {
+    width: 600px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    height: 380px;
+    position: absolute;
+    top:10px;
+    margin: 0 30px;
+}
+
+.callcopy {
+    width: 600px;
+    padding: 10px 10px;
+    height: 380px;
+    margin: 0 30px;
+    position: absolute;
+    top:220px;
+}
+
+.callcopy h1 {
+    font-size: 28px;
+    margin-top: -10px;
+}
+
+.callcopy p {
+    font-size: 16px;
+}
+
+.innerContent p {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin: 0 0;
+    font-family: sans-serif;
+}
+.callmeBack.button {
+    background: url(http://i1.adis.ws/i/dfs/holding_page_request_a_call_back_white_icon) no-repeat #cc0066;
+    color: #fff;
+    font-size: 20px;
+    width: 248px;
+    cursor:pointer;
+    margin: 10px auto;
+    background-position: 20px 7px;
+    font-family: sans-serif;
+    padding: 10px 0px 10px 35px;
+}
+
+.closedToday {
+    position: absolute;
+    bottom: 94px;
+    color: red;
+    right: 130px;
+    font-size: 12px;
+    width: 200px;
+}
+
+.hidden {
+  display:none;
+}
+
+@media (max-width: 1365px) {
+  #holdingPage {
+    width:1024px;
+  }
+}
+
+  @media (max-width: 1023px) {
+    #holdingPage {
+      width:600px;
+    }
+    .content {
+      width: 600px;
+      height: 772px;
+      position: relative;
+      margin: 0 auto;
+    }
+    .innerContent {
+      width: 560px;
+      padding: 10px 20px;
+
+    }
+}
+
+.ui-timepicker-wrapper {
+	overflow-y: auto;
+	max-height: 150px;
+	width: 6.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	outline: none;
+	z-index: 10001;
+	margin: 0;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+	width: 13em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+	width: 11em;
+}
+
+.ui-timepicker-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ui-timepicker-duration {
+	margin-left: 5px; color: #888;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-duration {
+	color: #888;
+}
+
+.ui-timepicker-list li {
+	padding: 3px 0 3px 5px;
+	cursor: pointer;
+	white-space: nowrap;
+	color: #000;
+	list-style: none;
+	margin: 0;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-selected {
+	background: #fff; color: #000;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+	background: #1980EC; color: #fff;
+}
+
+li.ui-timepicker-selected .ui-timepicker-duration,
+.ui-timepicker-list li:hover .ui-timepicker-duration {
+	color: #ccc;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	color: #888;
+	cursor: default;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	background: #f2f2f2;
+}
+/* Form Modal */
+
+section.cmbForm.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+}
+.cmbFormWrapper {
+    width: 769px;
+    height: 600px;
+    margin-left: -384.5px;
+    margin-top: -266.5px;
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+}
+
+div#closeModal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff !important;
+    background: #3d2182;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+/* Form Css */
+.cmbFormWrapper img {
+    width: 114px;
+    margin: 0 auto;
+    display: block;
+}
+.cmbFormWrapper h2 {
+    color: #b8006c;
+    font-size: 24px;
+    margin: 15px;
+}
+.cmbFormWrapper select, .cmbFormWrapper input {
+    font-size: 16px;
+    background: #ffe8e8;
+    padding: 8px 10px;
+    margin: 10px 0 0;
+    box-sizing: border-box;
+    border-style:none;
+    width: 50%;
+}
+.cmbFormWrapper select {
+    width: 100px;
+    margin-right: 264px;
+}
+.cmbFormWrapper label {
+    width: 200px;
+    display: inline-block;
+    text-align: -webkit-right;
+    left: 10px;
+    padding-right: 20px;
+}
+span.required {
+    color: red;
+}
+button#SubmitCMB {
+    background: #b8006c;
+    box-shadow: none;
+    border-style: none;
+    color: #fff;
+    cursor:pointer;
+    width: 233px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+button#SubmitCMB:hover {
+    background: #561281;
+  }
+  button#SubmitCMB[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+}
+input.valid, select.valid {
+    background: #e5ffe5;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffe8e8 inset;
+}
+input.valid:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #e5ffe5 inset;
+}
+@media (max-width: 1023px) {
+  .cmbFormWrapper {
+      width: 560px;
+      height: 600px;
+      margin-left: -280px;
+      margin-top: -266.5px;
+  }
+  .cmbFormWrapper select, .cmbFormWrapper input {
+    font-size: 15px;
+    width: 55%;
+  }
+  .cmbFormWrapper select {
+    margin-right: 185px;
+    width: 100px;
+  }
+  .cmbFormWrapper label {
+    width: 175px;
+    font-size: 15px;
+  }
+  .closedToday {
+    bottom: 86px;
+    right: 36px;
+    width: 155px;
+  }
+}
