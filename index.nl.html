@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DFS Netherlands currently offline</title>
     <!-- Bootstrap 4.3.1-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom Css Styles -->
-    <link rel="stylesheet" href="css/dfsholdingpage.css?v=7-10-2019">
+    <link rel="stylesheet" href="https://holding.dfs.ie/css/dfsholdingpage.css?v=7-10-2019">
 </head>
 
 <body>
-<!-- ::CAPTCHA_BOX:: -->
     <!-- Vue.js v2.5.17 -->
     <script src="//c1.adis.ws/c/dfs/vue2"></script>
 
@@ -21,16 +21,17 @@
 
         <div class="content" id="hpage">
             <div class="innerContent">
-                <p>Thank you for visiting</p>
-                <img src="images/dfs_holdingpage_logo.png" alt="DFS Logo">
-                <p>The site will be offline for a planned upgrade</p>
-                <p>We are due to be back online by 8am</p>
+                <p>Bedankt voor het bezoeken van onze DFS website</p>
+                <img src="https://holding.dfs.ie/images/dfs_holdingpage_logo.png" alt="DFS Logo">
+                <p>Op dit moment is onze website offline vanwege belangrijke geplande updates</p>
+                <p>Deze zal weer beschikbaar zijn vanaf 9:00 uur</p>
             </div>
 
-             <div class="callcopy">
-                 <p>If you would like to speak to someone, or to place an order please call</p>
-                 <h1>Bel gratis 0800 0135</h1>
-                     <p>or we can call you back at a time to suit you</p>
+            <div class="callcopy">
+                <p>Onze teams staan in de tussentijd nog steeds klaar voor u bij het beantwoorden van vragen of bij het
+                    plaatsen van een order</p>
+                <h1>0800 0135</h1>
+                <p></p>
 
                 <div class="callmeBack button">Request a call back</div>
             </div>
@@ -41,10 +42,12 @@
         <div class="cmbFormWrapper">
             <img src="//i1.adis.ws/i/dfs/dfs_logo_holding_page" alt="DFS Logo">
             <h2>Request A Call Back</h2>
-            <form id="cmbForm" action="https://my.nanorep.com/api/tickets/v1/create" method="post" enctype="multipart/form-data">
+            <form id="cmbForm" action="https://my.nanorep.com/api/tickets/v1/create" method="post"
+                enctype="multipart/form-data">
                 <div class="formFields">
                     <label for="title">Title <span class="required">*</span></label>
-                    <select required class="safecharacters required" id="title" name="title" data-validationrule="title" aria-required="true" aria-invalid="true">
+                    <select required class="safecharacters required" id="title" name="title" data-validationrule="title"
+                        aria-required="true" aria-invalid="true">
                         <option value="">Select</option>
                         <option value="Mr">Mr</option>
                         <option value="Mrs">Mrs</option>
@@ -58,24 +61,29 @@
                 </div>
                 <div class="formFields">
                     <label for="fullName">Full Name <span class="required">*</span></label>
-                    <input required type="text" class="safecharacters required" id="fullName" name="fullName" placeholder="Full Name" />
+                    <input required type="text" class="safecharacters required" id="fullName" name="fullName"
+                        placeholder="Full Name" />
                 </div>
                 <div class="formFields">
                     <label for="emailAddress">Email Address <span class="required">*</span></label>
-                    <input required type="email" class="email required" id="emailAddress" name="emailAddress" placeholder="Email Address" />
+                    <input required type="email" class="email required" id="emailAddress" name="emailAddress"
+                        placeholder="Email Address" />
                 </div>
                 <div class="formFields">
                     <label for="emailAddressConfirm">Confirm Email <span class="required">*</span></label>
-                    <input required type="email" class="email required" id="emailAddressConfirm" name="emailAddressConfirm" placeholder="Please re-enter your Email Address" />
+                    <input required type="email" class="email required" id="emailAddressConfirm"
+                        name="emailAddressConfirm" placeholder="Please re-enter your Email Address" />
                 </div>
                 <div class="formFields">
                     <label for="contactNumber">Contact Number <span class="required">*</span></label>
-                    <input required type="tel" class="telephone required" id="contactNumber" name="contactNumber" placeholder="Contact Number" />
+                    <input required type="tel" class="telephone required" id="contactNumber" name="contactNumber"
+                        placeholder="Contact Number" />
                 </div>
 
                 <div class="formFields">
                     <label for="altNumber">Alternative Number </label>
-                    <input type="tel" class="telephone required valid" id="altNumber" name="altNumber" placeholder="Alternative Number" />
+                    <input type="tel" class="telephone required valid" id="altNumber" name="altNumber"
+                        placeholder="Alternative Number" />
                 </div>
 
                 <div class="formFields SelectTime">
@@ -100,14 +108,16 @@
                 <input type="hidden" id="success_redirection_url" name='success_redirection_url' value="" />
             </form>
 
-            <div class="closedToday hidden">We are now closed, please select a time for us to call you back tomorrow.</div>
+            <div class="closedToday hidden">We are now closed, please select a time for us to call you back tomorrow.
+            </div>
             <div id="closeModal">X</div>
         </div>
 
     </section>
 
     <!-- Jquery3 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Store data: production -->
     <script src="//c1.adis.ws/c/dfs/dfsstoreData.min?v2.5"></script>
